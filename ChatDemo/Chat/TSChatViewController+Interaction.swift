@@ -128,79 +128,79 @@ extension TSChatViewController: UINavigationControllerDelegate, UIImagePickerCon
 
 // MARK: - @protocol RecordAudioDelegate
 // 语音录制完毕后
-extension TSChatViewController: RecordAudioDelegate {
-    func audioRecordUpdateMetra(_ metra: Float) {
-        self.voiceIndicatorView.updateMetersValue(metra)
-    }
-    
-    func audioRecordTooShort() {
-        self.voiceIndicatorView.messageTooShort()
-    }
-    
-    func audioRecordFinish(_ uploadAmrData: Data, recordTime: Float, fileHash: String) {
-        self.voiceIndicatorView.endRecord()
-        
-        //发送本地音频
-        let audioModel = ChatAudioModel()
-        audioModel.keyHash = fileHash
-        audioModel.audioURL = ""
-        audioModel.duration = recordTime
-        self.chatSendVoice(audioModel)
-
-        /**
-        *  异步上传音频文件, 然后上传成功后，把 model 值改掉
-        *  因为还没有上传的 API，所以这个函数会返回错误  T.T
-        */
-//        HttpManager.uploadAudio(uploadAmrData, recordTime: String(recordTime), success: {model in
-//            audioModel.keyHash = model.keyHash
-//            audioModel.audioURL = model.audioURL
-//            audioModel.duration = recordTime
-//        }, failure: {
-//        
-//        })
-    }
-    
-    func audioRecordFailed() {
-        TSAlertView_show("录音失败，请重试")
-    }
-    
-    func audioRecordCanceled() {
-        
-    }
-}
+//extension TSChatViewController: RecordAudioDelegate {
+//    func audioRecordUpdateMetra(_ metra: Float) {
+//        self.voiceIndicatorView.updateMetersValue(metra)
+//    }
+//
+//    func audioRecordTooShort() {
+//        self.voiceIndicatorView.messageTooShort()
+//    }
+//
+//    func audioRecordFinish(_ uploadAmrData: Data, recordTime: Float, fileHash: String) {
+//        self.voiceIndicatorView.endRecord()
+//
+//        //发送本地音频
+//        let audioModel = ChatAudioModel()
+//        audioModel.keyHash = fileHash
+//        audioModel.audioURL = ""
+//        audioModel.duration = recordTime
+//        self.chatSendVoice(audioModel)
+//
+//        /**
+//        *  异步上传音频文件, 然后上传成功后，把 model 值改掉
+//        *  因为还没有上传的 API，所以这个函数会返回错误  T.T
+//        */
+////        HttpManager.uploadAudio(uploadAmrData, recordTime: String(recordTime), success: {model in
+////            audioModel.keyHash = model.keyHash
+////            audioModel.audioURL = model.audioURL
+////            audioModel.duration = recordTime
+////        }, failure: {
+////
+////        })
+//    }
+//
+//    func audioRecordFailed() {
+//        TSAlertView_show("录音失败，请重试")
+//    }
+//
+//    func audioRecordCanceled() {
+//
+//    }
+//}
 
 // MARK: - @protocol PlayAudioDelegate
-extension TSChatViewController: PlayAudioDelegate {
-    /**
-     播放完毕
-     */
-    func audioPlayStart() {
-    
-    }
-    
-    /**
-     播放完毕
-     */
-    func audioPlayFinished() {
-        self.currentVoiceCell.resetVoiceAnimation()
-    }
-    
-    /**
-     播放失败
-     */
-    func audioPlayFailed() {
-        self.currentVoiceCell.resetVoiceAnimation()
-    }
-    
-    
-    /**
-     播放被中断
-     */
-    func audioPlayInterruption() {
-        self.currentVoiceCell.resetVoiceAnimation()
-    }
-}
-
+//extension TSChatViewController: PlayAudioDelegate {
+//    /**
+//     播放完毕
+//     */
+//    func audioPlayStart() {
+//    
+//    }
+//    
+//    /**
+//     播放完毕
+//     */
+//    func audioPlayFinished() {
+//        self.currentVoiceCell.resetVoiceAnimation()
+//    }
+//    
+//    /**
+//     播放失败
+//     */
+//    func audioPlayFailed() {
+//        self.currentVoiceCell.resetVoiceAnimation()
+//    }
+//    
+//    
+//    /**
+//     播放被中断
+//     */
+//    func audioPlayInterruption() {
+//        self.currentVoiceCell.resetVoiceAnimation()
+//    }
+//}
+//
 
 // MARK: - @protocol ChatEmotionInputViewDelegate
 // 表情点击完毕后

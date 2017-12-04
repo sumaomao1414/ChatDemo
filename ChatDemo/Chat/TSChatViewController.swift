@@ -40,7 +40,7 @@ final class TSChatViewController: UIViewController {
     var keyboardHeightConstraint: NSLayoutConstraint?  //键盘高度的 Constraint
     var emotionInputView: TSChatEmotionInputView! //表情键盘
     var shareMoreView: TSChatShareMoreView!    //分享键盘
-    var voiceIndicatorView: TSChatVoiceIndicatorView! //声音的显示 View
+    //var voiceIndicatorView: TSChatVoiceIndicatorView! //声音的显示 View
     let disposeBag = DisposeBag()
     var imagePicker: UIImagePickerController!   //照相机
     var itemDataSouce = [ChatModel]()
@@ -69,9 +69,9 @@ final class TSChatViewController: UIViewController {
         self.setupActionBarButtonInterAction()
         
         //设置录音 delegate
-        AudioRecordInstance.delegate = self
-        //设置播放 delegate
-        AudioPlayInstance.delegate = self
+//        AudioRecordInstance.delegate = self
+//        //设置播放 delegate
+//        AudioPlayInstance.delegate = self
         
         //获取第一屏的数据
         self.firstFetchMessageList()

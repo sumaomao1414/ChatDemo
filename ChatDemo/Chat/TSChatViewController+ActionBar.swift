@@ -40,35 +40,35 @@ extension TSChatViewController {
         
         
         //录音按钮
-        var finishRecording: Bool = true  //控制滑动取消后的结果，决定停止录音还是取消录音
-        let longTap = UILongPressGestureRecognizer()
-        recordButton.addGestureRecognizer(longTap)
-        longTap.rx.event.subscribe {[weak self] _ in
-            guard let strongSelf = self else { return }
-            if longTap.state == .began { //长按开始
-                finishRecording = true
-                strongSelf.voiceIndicatorView.recording()
-                AudioRecordInstance.startRecord()
-                recordButton.replaceRecordButtonUI(isRecording: true)
-            } else if longTap.state == .changed { //长按平移
-                let point = longTap.location(in: self!.voiceIndicatorView)
-                if strongSelf.voiceIndicatorView.point(inside: point, with: nil) {
-                    strongSelf.voiceIndicatorView.slideToCancelRecord()
-                    finishRecording = false
-                } else {
-                    strongSelf.voiceIndicatorView.recording()
-                    finishRecording = true
-                }
-            } else if longTap.state == .ended { //长按结束
-                if finishRecording {
-                    AudioRecordInstance.stopRecord()
-                } else {
-                    AudioRecordInstance.cancelRrcord()
-                }
-                strongSelf.voiceIndicatorView.endRecord()
-                recordButton.replaceRecordButtonUI(isRecording: false)
-            }
-        }.addDisposableTo(self.disposeBag)
+//        var finishRecording: Bool = true  //控制滑动取消后的结果，决定停止录音还是取消录音
+//        let longTap = UILongPressGestureRecognizer()
+//        recordButton.addGestureRecognizer(longTap)
+//        longTap.rx.event.subscribe {[weak self] _ in
+//            guard let strongSelf = self else { return }
+//            if longTap.state == .began { //长按开始
+//                finishRecording = true
+//                strongSelf.voiceIndicatorView.recording()
+//                AudioRecordInstance.startRecord()
+//                recordButton.replaceRecordButtonUI(isRecording: true)
+//            } else if longTap.state == .changed { //长按平移
+//                let point = longTap.location(in: self!.voiceIndicatorView)
+//                if strongSelf.voiceIndicatorView.point(inside: point, with: nil) {
+//                    strongSelf.voiceIndicatorView.slideToCancelRecord()
+//                    finishRecording = false
+//                } else {
+//                    strongSelf.voiceIndicatorView.recording()
+//                    finishRecording = true
+//                }
+//            } else if longTap.state == .ended { //长按结束
+//                if finishRecording {
+//                    AudioRecordInstance.stopRecord()
+//                } else {
+//                    AudioRecordInstance.cancelRrcord()
+//                }
+//                strongSelf.voiceIndicatorView.endRecord()
+//                recordButton.replaceRecordButtonUI(isRecording: false)
+//            }
+//        }.addDisposableTo(self.disposeBag)
         
         
         //表情按钮

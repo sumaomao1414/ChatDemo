@@ -19,7 +19,7 @@ extension TSChatViewController {
         self.setupActionBar(delegate)
         self.initListTableView()
         self.setupKeyboardInputView()
-        self.setupVoiceIndicatorView()
+       // self.setupVoiceIndicatorView()
     }
     
     fileprivate func initListTableView() {
@@ -89,19 +89,19 @@ extension TSChatViewController {
     /**
      初始化 VoiceIndicator
      */
-    fileprivate func setupVoiceIndicatorView() {
-        //voiceIndicatorView init
-        self.voiceIndicatorView = UIView.ts_viewFromNib(TSChatVoiceIndicatorView.self)
-        self.view.addSubview(self.voiceIndicatorView)
-        self.voiceIndicatorView.snp.makeConstraints {[weak self] (make) -> Void in
-            guard let strongSelf = self else { return }
-            make.top.equalTo(strongSelf.view.snp.top).offset(100)
-            make.left.equalTo(strongSelf.view.snp.left)
-            make.bottom.equalTo(strongSelf.view.snp.bottom).offset(-100)
-            make.right.equalTo(strongSelf.view.snp.right)
-        }
-        self.voiceIndicatorView.isHidden = true
-    }
+//    fileprivate func setupVoiceIndicatorView() {
+//        //voiceIndicatorView init
+//        self.voiceIndicatorView = UIView.ts_viewFromNib(TSChatVoiceIndicatorView.self)
+//        self.view.addSubview(self.voiceIndicatorView)
+//        self.voiceIndicatorView.snp.makeConstraints {[weak self] (make) -> Void in
+//            guard let strongSelf = self else { return }
+//            make.top.equalTo(strongSelf.view.snp.top).offset(100)
+//            make.left.equalTo(strongSelf.view.snp.left)
+//            make.bottom.equalTo(strongSelf.view.snp.bottom).offset(-100)
+//            make.right.equalTo(strongSelf.view.snp.right)
+//        }
+//        self.voiceIndicatorView.isHidden = true
+//    }
 }
 
 

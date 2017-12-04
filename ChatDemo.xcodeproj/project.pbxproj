@@ -65,8 +65,6 @@
 		2E7F119B1FD0E93A0032EA55 /* TSChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F116A1FD0E93A0032EA55 /* TSChatShareMoreView.swift */; };
 		2E7F119C1FD0E93A0032EA55 /* TSChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F116B1FD0E93A0032EA55 /* TSChatShareMoreView.xib */; };
 		2E7F119D1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F116C1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift */; };
-		2E7F119E1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F116D1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.swift */; };
-		2E7F119F1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F116E1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.xib */; };
 		2E7F11A11FD0FBE90032EA55 /* BridgrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A01FD0FBE90032EA55 /* BridgrViewController.swift */; };
 		2E7F11A51FD0FC9A0032EA55 /* bridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A41FD0FC9A0032EA55 /* bridgeViewController.m */; };
 		2E7F11B01FD1240A0032EA55 /* TSFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A71FD1240A0032EA55 /* TSFullyHorizontalFlowLayout.swift */; };
@@ -174,8 +172,6 @@
 		2E7F116A1FD0E93A0032EA55 /* TSChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatShareMoreView.swift; sourceTree = "<group>"; };
 		2E7F116B1FD0E93A0032EA55 /* TSChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatShareMoreView.xib; sourceTree = "<group>"; };
 		2E7F116C1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatSystemEdgeLabel.swift; sourceTree = "<group>"; };
-		2E7F116D1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatVoiceIndicatorView.swift; sourceTree = "<group>"; };
-		2E7F116E1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
 		2E7F11A01FD0FBE90032EA55 /* BridgrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgrViewController.swift; sourceTree = "<group>"; };
 		2E7F11A21FD0FC990032EA55 /* ChatDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E7F11A31FD0FC9A0032EA55 /* bridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgeViewController.h; sourceTree = "<group>"; };
@@ -345,8 +341,6 @@
 				2E7F116A1FD0E93A0032EA55 /* TSChatShareMoreView.swift */,
 				2E7F116B1FD0E93A0032EA55 /* TSChatShareMoreView.xib */,
 				2E7F116C1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift */,
-				2E7F116D1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.swift */,
-				2E7F116E1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -599,7 +593,6 @@
 				2E7F119A1FD0E93A0032EA55 /* TSChatShareMoreCollectionViewCell.xib in Resources */,
 				2E7F11911FD0E93A0032EA55 /* TSChatActionBarView.xib in Resources */,
 				2E223D311FD4E8D2004D5D65 /* contact.json in Resources */,
-				2E7F119F1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.xib in Resources */,
 				2E7F117A1FD0E93A0032EA55 /* TSChatVoiceCell.xib in Resources */,
 				2E7F11741FD0E93A0032EA55 /* TSChatSystemCell.xib in Resources */,
 				2EA9E1381FCFF9B5004B5BD3 /* Assets.xcassets in Resources */,
@@ -887,7 +880,6 @@
 				2E7F11891FD0E93A0032EA55 /* TSChatViewController+HandleData.swift in Sources */,
 				2E223D291FD4DD0A004D5D65 /* TSAppMacro.swift in Sources */,
 				2E7F119D1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift in Sources */,
-				2E7F119E1FD0E93A0032EA55 /* TSChatVoiceIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
