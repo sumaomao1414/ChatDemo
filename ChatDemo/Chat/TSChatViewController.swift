@@ -50,9 +50,9 @@ final class TSChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = self.messageModel!.nickname!
+        self.title = "聊天"//self.messageModel!.nickname!
         self.view.backgroundColor = UIColor.viewBackgroundColor
-        self.navigationController!.interactivePopGestureRecognizer!.isEnabled = true
+        //self.navigationController!.interactivePopGestureRecognizer!.isEnabled = true
 
         //TableView init
         self.listTableView.ts_registerCellNib(TSChatTextCell.self)
