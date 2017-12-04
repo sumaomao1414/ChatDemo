@@ -22,7 +22,7 @@ class ChatModel: NSObject, TSModelProtocol {
     var timestamp : String? //同 publishTimestamp
     var messageFromType : MessageFromType = MessageFromType.Group
     //以下是为了配合 UI 来使用
-    var fromMe : Bool { return self.chatSendId == "1" }
+    var fromMe : Bool { return self.chatSendId == "wx1234skjksmsjdfwe234" }
     var richTextLayout: YYTextLayout?
     var richTextLinePositionModifier: TSYYTextLinePositionModifier?
     var richTextAttributedString: NSMutableAttributedString?

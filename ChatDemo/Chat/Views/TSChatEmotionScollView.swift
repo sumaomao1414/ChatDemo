@@ -51,12 +51,12 @@ class TSChatEmotionScollView: UICollectionView {
      */
     func startBackspaceTimer() {
         self.endBackspaceTimer()
-//        self.backspaceTimer = Timer.ts_every(0.1, {[weak self] in
-//            if self!.currentMagnifierCell!.isDelete {
-//                UIDevice.current.playInputClick()
-//                self!.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self!.currentMagnifierCell!)
-//            }
-//        })
+        self.backspaceTimer = Timer.ts_every(0.1, {[weak self] in
+            if self!.currentMagnifierCell!.isDelete {
+                UIDevice.current.playInputClick()
+                self!.emotionScrollDelegate?.emoticonScrollViewDidTapCell(self!.currentMagnifierCell!)
+            }
+        })
         RunLoop.main.add(self.backspaceTimer, forMode: RunLoopMode.commonModes)
     }
     

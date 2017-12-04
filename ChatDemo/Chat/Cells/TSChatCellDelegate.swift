@@ -37,5 +37,5 @@ import Foundation
     /**
      点击了声音 cell 的播放 button
      */
-    func cellDidTapedVoiceButton(_ cell: TSChatVoiceCell, isPlayingVoice: Bool)
+    //func cellDidTapedVoiceButton(_ cell: TSChatVoiceCell, isPlayingVoice: Bool)
 }

@@ -26,9 +26,9 @@ class TSChatEmotionCell: UICollectionViewCell {
         }
         self.emotionModel = model
         self.isDelete = false
-//        if let path = TSConfig.ExpressionBundle!.path(forResource: model.imageString, ofType:"png") {
-//            self.emotionImageView.image = UIImage(contentsOfFile: path)
-//        }
+        if let path = TSConfig.ExpressionBundle!.path(forResource: model.imageString, ofType:"png") {
+            self.emotionImageView.image = UIImage(contentsOfFile: path)
+        }
     }
     
     func setDeleteCellContnet() {

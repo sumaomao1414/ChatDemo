@@ -40,12 +40,10 @@ final class TSChatViewController: UIViewController {
     var keyboardHeightConstraint: NSLayoutConstraint?  //键盘高度的 Constraint
     var emotionInputView: TSChatEmotionInputView! //表情键盘
     var shareMoreView: TSChatShareMoreView!    //分享键盘
-    //var voiceIndicatorView: TSChatVoiceIndicatorView! //声音的显示 View
     let disposeBag = DisposeBag()
     var imagePicker: UIImagePickerController!   //照相机
     var itemDataSouce = [ChatModel]()
     var isReloading: Bool = false               //UITableView 是否正在加载数据, 如果是，把当前发送的消息缓存起来后再进行发送
-    var currentVoiceCell: TSChatVoiceCell!     //现在正在播放的声音的 cell
     var isEndRefreshing: Bool = true            // 是否结束了下拉加载更多
     
     override func viewDidLoad() {
@@ -57,7 +55,6 @@ final class TSChatViewController: UIViewController {
         //TableView init
         self.listTableView.ts_registerCellNib(TSChatTextCell.self)
         self.listTableView.ts_registerCellNib(TSChatImageCell.self)
-        self.listTableView.ts_registerCellNib(TSChatVoiceCell.self)
         self.listTableView.ts_registerCellNib(TSChatSystemCell.self)
         self.listTableView.ts_registerCellNib(TSChatTimeCell.self)
         self.listTableView.tableFooterView = UIView()
@@ -67,11 +64,6 @@ final class TSChatViewController: UIViewController {
         self.setupSubviews(self)
         self.keyboardControl()
         self.setupActionBarButtonInterAction()
-        
-        //设置录音 delegate
-//        AudioRecordInstance.delegate = self
-//        //设置播放 delegate
-//        AudioPlayInstance.delegate = self
         
         //获取第一屏的数据
         self.firstFetchMessageList()
@@ -125,6 +117,9 @@ extension TSChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let chatModel = self.itemDataSouce.get(index: indexPath.row) else {return TSChatBaseCell()}
         let type: MessageContentType = chatModel.messageContentType
+        if type == .Voice {
+            
+        }
         return type.chatCell(tableView, indexPath: indexPath, model: chatModel, viewController: self)!
     }
 }

@@ -28,8 +28,6 @@
 		2E7F11761FD0E93A0032EA55 /* TSChatTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F11431FD0E9390032EA55 /* TSChatTextCell.xib */; };
 		2E7F11771FD0E93A0032EA55 /* TSChatTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11441FD0E9390032EA55 /* TSChatTimeCell.swift */; };
 		2E7F11781FD0E93A0032EA55 /* TSChatTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F11451FD0E9390032EA55 /* TSChatTimeCell.xib */; };
-		2E7F11791FD0E93A0032EA55 /* TSChatVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11461FD0E9390032EA55 /* TSChatVoiceCell.swift */; };
-		2E7F117A1FD0E93A0032EA55 /* TSChatVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F11471FD0E93A0032EA55 /* TSChatVoiceCell.xib */; };
 		2E7F117B1FD0E93A0032EA55 /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11491FD0E93A0032EA55 /* AudioDelegate.swift */; };
 		2E7F117C1FD0E93A0032EA55 /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F114A1FD0E93A0032EA55 /* AudioFilesManager.swift */; };
 		2E7F117D1FD0E93A0032EA55 /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F114B1FD0E93A0032EA55 /* AudioPlayManager.swift */; };
@@ -86,6 +84,8 @@
 		2E7F11CB1FD13B5F0032EA55 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11CA1FD13B5F0032EA55 /* UIViewController+Extension.swift */; };
 		2E7F11CD1FD13BF70032EA55 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11CC1FD13BF70032EA55 /* NSDate+Extension.swift */; };
 		2E7F11CF1FD13C850032EA55 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11CE1FD13C850032EA55 /* NSObject+String.swift */; };
+		2E8826FE1FD523A3007B722F /* PHAsset+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8826FD1FD523A3007B722F /* PHAsset+Extension.swift */; };
+		2E8827001FD53701007B722F /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8826FF1FD53701007B722F /* Kenny.jpg */; };
 		2EA9E1311FCFF9B5004B5BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9E1301FCFF9B5004B5BD3 /* AppDelegate.swift */; };
 		2EA9E1331FCFF9B5004B5BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9E1321FCFF9B5004B5BD3 /* ViewController.swift */; };
 		2EA9E1361FCFF9B5004B5BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA9E1341FCFF9B5004B5BD3 /* Main.storyboard */; };
@@ -135,8 +135,6 @@
 		2E7F11431FD0E9390032EA55 /* TSChatTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatTextCell.xib; sourceTree = "<group>"; };
 		2E7F11441FD0E9390032EA55 /* TSChatTimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatTimeCell.swift; sourceTree = "<group>"; };
 		2E7F11451FD0E9390032EA55 /* TSChatTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatTimeCell.xib; sourceTree = "<group>"; };
-		2E7F11461FD0E9390032EA55 /* TSChatVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatVoiceCell.swift; sourceTree = "<group>"; };
-		2E7F11471FD0E93A0032EA55 /* TSChatVoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatVoiceCell.xib; sourceTree = "<group>"; };
 		2E7F11491FD0E93A0032EA55 /* AudioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
 		2E7F114A1FD0E93A0032EA55 /* AudioFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
 		2E7F114B1FD0E93A0032EA55 /* AudioPlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
@@ -195,6 +193,8 @@
 		2E7F11CA1FD13B5F0032EA55 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2E7F11CC1FD13BF70032EA55 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		2E7F11CE1FD13C850032EA55 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		2E8826FD1FD523A3007B722F /* PHAsset+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHAsset+Extension.swift"; sourceTree = "<group>"; };
+		2E8826FF1FD53701007B722F /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		2EA9E12D1FCFF9B5004B5BD3 /* ChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA9E1301FCFF9B5004B5BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EA9E1321FCFF9B5004B5BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -299,8 +299,6 @@
 				2E7F11431FD0E9390032EA55 /* TSChatTextCell.xib */,
 				2E7F11441FD0E9390032EA55 /* TSChatTimeCell.swift */,
 				2E7F11451FD0E9390032EA55 /* TSChatTimeCell.xib */,
-				2E7F11461FD0E9390032EA55 /* TSChatVoiceCell.swift */,
-				2E7F11471FD0E93A0032EA55 /* TSChatVoiceCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -400,6 +398,7 @@
 		2EA9E12F1FCFF9B5004B5BD3 /* ChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2E8826FF1FD53701007B722F /* Kenny.jpg */,
 				2E223D381FD4EE19004D5D65 /* Expression.plist */,
 				2E223D341FD4E8EA004D5D65 /* Expression.bundle */,
 				2E223D2B1FD4E8D2004D5D65 /* JSON */,
@@ -408,6 +407,7 @@
 				2E7F11CE1FD13C850032EA55 /* NSObject+String.swift */,
 				2E7F11CC1FD13BF70032EA55 /* NSDate+Extension.swift */,
 				2E7F11CA1FD13B5F0032EA55 /* UIViewController+Extension.swift */,
+				2E8826FD1FD523A3007B722F /* PHAsset+Extension.swift */,
 				2E7F11C81FD13B550032EA55 /* UIView+Frame.swift */,
 				2EA9E1301FCFF9B5004B5BD3 /* AppDelegate.swift */,
 				2EA9E1321FCFF9B5004B5BD3 /* ViewController.swift */,
@@ -587,13 +587,13 @@
 			files = (
 				2E7F119C1FD0E93A0032EA55 /* TSChatShareMoreView.xib in Resources */,
 				2E223D301FD4E8D2004D5D65 /* chat.json in Resources */,
+				2E8827001FD53701007B722F /* Kenny.jpg in Resources */,
 				2E7F11971FD0E93A0032EA55 /* TSChatEmotionInputView.xib in Resources */,
 				2EA9E13B1FCFF9B5004B5BD3 /* LaunchScreen.storyboard in Resources */,
 				2E223D331FD4E8D2004D5D65 /* moments.json in Resources */,
 				2E7F119A1FD0E93A0032EA55 /* TSChatShareMoreCollectionViewCell.xib in Resources */,
 				2E7F11911FD0E93A0032EA55 /* TSChatActionBarView.xib in Resources */,
 				2E223D311FD4E8D2004D5D65 /* contact.json in Resources */,
-				2E7F117A1FD0E93A0032EA55 /* TSChatVoiceCell.xib in Resources */,
 				2E7F11741FD0E93A0032EA55 /* TSChatSystemCell.xib in Resources */,
 				2EA9E1381FCFF9B5004B5BD3 /* Assets.xcassets in Resources */,
 				2E7F11721FD0E93A0032EA55 /* TSChatImageCell.xib in Resources */,
@@ -826,7 +826,6 @@
 				2E7F11CB1FD13B5F0032EA55 /* UIViewController+Extension.swift in Sources */,
 				2E7F11C41FD125FA0032EA55 /* TSMessageModel.swift in Sources */,
 				2E7F11981FD0E93A0032EA55 /* TSChatEmotionScollView.swift in Sources */,
-				2E7F11791FD0E93A0032EA55 /* TSChatVoiceCell.swift in Sources */,
 				2E7F11A11FD0FBE90032EA55 /* BridgrViewController.swift in Sources */,
 				2E7F11921FD0E93A0032EA55 /* TSChatButton+UI.swift in Sources */,
 				2E7F11C61FD125FA0032EA55 /* TSModelTransformer.swift in Sources */,
@@ -851,6 +850,7 @@
 				2E7F11901FD0E93A0032EA55 /* TSChatActionBarView.swift in Sources */,
 				2EA9E1311FCFF9B5004B5BD3 /* AppDelegate.swift in Sources */,
 				2E223D251FD4DABC004D5D65 /* Const.swift in Sources */,
+				2E8826FE1FD523A3007B722F /* PHAsset+Extension.swift in Sources */,
 				2E7F11931FD0E93A0032EA55 /* TSChatButton.swift in Sources */,
 				2E7F117C1FD0E93A0032EA55 /* AudioFilesManager.swift in Sources */,
 				2E7F11771FD0E93A0032EA55 /* TSChatTimeCell.swift in Sources */,

@@ -28,9 +28,9 @@ extension TSChatViewController: ChatShareMoreViewDelegate {
             }, finish: {[weak self] (assets: [PHAsset]) -> Void in
                 print("Finish: \(assets.get(index: 0))")
                 guard let strongSelf = self else { return }
-//                if let image = assets.get(index: 0).getUIImage() {
-//                    strongSelf.resizeAndSendImage(image)
-//                }
+                if let image = assets.get(index: 0).getUIImage() {
+                    strongSelf.resizeAndSendImage(image)
+                }
             }, completion: { () -> Void in
                 print("completion")
         })
@@ -286,6 +286,8 @@ extension TSChatViewController: TSChatCellDelegate {
     func cellDidTapedLink(_ cell: TSChatBaseCell, linkString: String) {
 //        let viewController = TSWebViewController(URLString: linkString)
 //        self.ts_pushAndHideTabbar(viewController)
+        TSAlertView_show("点击了url")
+
     }
     
     /**
@@ -295,26 +297,6 @@ extension TSChatViewController: TSChatCellDelegate {
         TSAlertView_show("点击了电话")
     }
     
-    /**
-     点击了声音 cell 的播放 button
-     */
-    func cellDidTapedVoiceButton(_ cell: TSChatVoiceCell, isPlayingVoice: Bool) {
-        //在切换选中的语音 cell 之前把之前的动画停止掉
-        if self.currentVoiceCell != nil && self.currentVoiceCell != cell {
-            self.currentVoiceCell.resetVoiceAnimation()
-        }
-        
-        if isPlayingVoice {
-            self.currentVoiceCell = cell
-            guard let audioModel = cell.model!.audioModel else {
-                AudioPlayInstance.stopPlayer()
-                return
-            }
-            AudioPlayInstance.startPlaying(audioModel)
-        } else {
-            AudioPlayInstance.stopPlayer()
-        }
-    }
 }
 
 

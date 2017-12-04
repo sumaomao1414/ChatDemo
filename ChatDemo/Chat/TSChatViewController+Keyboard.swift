@@ -47,39 +47,6 @@ extension TSChatViewController {
         notificationCenter.ts_addObserver(self, name: NSNotification.Name.UIKeyboardDidHide.rawValue, object: nil, handler: {
             observer, notification in
             })
-        
-//        notificationCenter.addObserverForName(
-//            UIKeyboardWillChangeFrameNotification,
-//            object: nil,
-//            queue: nil
-//            ) {[weak self] (notification) in
-//                return
-//                //如果是 表情键盘或者 分享键盘 ，走自己的处理键盘事件。高度 和 inputview 动画
-//                let keyboardType = self!.chatActionBarView.keyboardType
-//                if keyboardType == .Emotion || keyboardType == .Share {
-//                    return
-//                }
-//                
-//                let userInfo = notification.userInfo!
-//                let frameEnd = userInfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue
-//                let convertedFrameEnd = self!.view.convertRect(frameEnd, fromView: nil)
-//                let heightOffset = self!.view.bounds.size.height - convertedFrameEnd.origin.y
-//                let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey]!.unsignedIntValue
-//                let options = UIViewAnimationOptions(rawValue: UInt(curve) << 16)
-//                
-//                self!.listTableView.stopScrolling()
-//                self!.actionBarPaddingBottomConstranit?.updateOffset(-heightOffset)
-//                self!.tableViewMarginBottomConstraint.constant = heightOffset + self!.chatActionBarView.height
-//                UIView.animateWithDuration(
-//                    userInfo[UIKeyboardAnimationDurationUserInfoKey]!.doubleValue,
-//                    delay: 0,
-//                    options: options.union(.LayoutSubviews).union(.BeginFromCurrentState),
-//                    animations: {
-//                        self!.view.layoutIfNeeded()
-//                    },
-//                    completion: { bool in
-//                })
-//        }
     }
     
     /**

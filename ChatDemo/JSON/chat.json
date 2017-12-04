@@ -45,50 +45,8 @@
       "device": "iPhone",
       "chat_receive_id": "wx43922sdkfjsfmmxdfmx"
     },
-    {
-      "message_id": "wx1234skjksmsjdfwe234iPhone1453358045",
-      "chat_receive_id": "wx43922sdkfjsfmmxdfmx",
-      "audioInfo": {
-        "key_hash": "4bdc6752ffdb76d307567968963fdf02",
-        "channels": "1",
-        "file_size": "11264",
-        "duration": "7",
-        "audio_url": "http://7xl2es.com1.z0.glb.clouddn.com/4bdc6752ffdb76d307567968963fdf02.amr",
-        "audio_id": "1485",
-        "format_name": "amr/amr",
-        "mime_type": "audio/amr",
-        "bit_rate": "12822.018"
-      },
-      "chat_send_id": "wx1234skjksmsjdfwe234",
-      "type": "1",
-      "timestamp": "1453358048458",
-      "message_type": "2",
-      "picInfo": null,
-      "message": "",
-      "device": "iPhone"
-    },
-    {
-      "message_id": "wx43922sdkfjsfmmxdfmxiPhone1453372358",
-      "chat_receive_id": "wx1234skjksmsjdfwe234",
-      "audioInfo": {
-        "key_hash": "0b835eaaf57e12f553a28fcbc3d6790e",
-        "channels": "1",
-        "file_size": "28672",
-        "duration": "17",
-        "audio_url": "http://7xl2es.com1.z0.glb.clouddn.com/0b835eaaf57e12f553a28fcbc3d6790e.amr",
-        "audio_id": "xxxxxxxxxx",
-        "format_name": "amr/amr",
-        "mime_type": "audio/amr",
-        "bit_rate": "12840.000"
-      },
-      "chat_send_id": "wx43922sdkfjsfmmxdfmx",
-      "type": "1",
-      "timestamp": "1453372359786",
-      "message_type": "2",
-      "picInfo": null,
-      "message": "",
-      "device": "iPhone"
-    },
+    
+    
     {
       "message_type": "0",
       "chat_send_id": "wx1234skjksmsjdfwe234",
@@ -168,50 +126,9 @@
       "device": "iPhone",
       "chat_receive_id": "wx43922sdkfjsfmmxdfmx"
     },
-    {
-      "message_id": "wx43922sdkfjsfmmxdfmxiPhone1454050179",
-      "chat_receive_id": "wx1234skjksmsjdfwe234",
-      "audioInfo": {
-        "key_hash": "4bdc6752ffdb76d307567968963fdf02",
-        "channels": "1",
-        "file_size": "3078",
-        "duration": "7",
-        "audio_url": "http://7xl2es.com1.z0.glb.clouddn.com/4bdc6752ffdb76d307567968963fdf02.amr",
-        "audio_id": "xxxxxxxxx",
-        "format_name": "amr/amr",
-        "mime_type": "audio/amr",
-        "bit_rate": "12825.000"
-      },
-      "chat_send_id": "wx43922sdkfjsfmmxdfmx",
-      "type": "1",
-      "timestamp": "1454050186495",
-      "message_type": "2",
-      "picInfo": null,
-      "message": "",
-      "device": "iPhone"
-    },
-    {
-      "message_id": "wx43922sdkfjsfmmxdfmxiPhone1454050185",
-      "chat_receive_id": "wx1234skjksmsjdfwe234",
-      "audioInfo": {
-        "key_hash": "ac8ee63ae1e7d7185bcc99d11145eebb",
-        "channels": "1",
-        "file_size": "30720",
-        "duration": "30",
-        "audio_url": "http://7xl2es.com1.z0.glb.clouddn.com/30k_basic_AMR.amr",
-        "audio_id": "1491",
-        "format_name": "amr/amr",
-        "mime_type": "audio/amr",
-        "bit_rate": "12819.672"
-      },
-      "chat_send_id": "wx43922sdkfjsfmmxdfmx",
-      "type": "1",
-      "timestamp": "1454050192804",
-      "message_type": "2",
-      "picInfo": null,
-      "message": "",
-      "device": "iPhone"
-    },
+    
+     
+   
     {
       "message_id": "wx43922sdkfjsfmmxdfmxiPhone1454050189",
       "chat_receive_id": "wx1234skjksmsjdfwe234",

@@ -18,7 +18,7 @@ extension MessageContentType {
         case .Image :
             return TSChatImageCell.layoutHeight(model)
         case .Voice:
-            return TSChatVoiceCell.layoutHeight(model)
+            return 0
         case .System:
             return TSChatSystemCell.layoutHeight(model)
         case .File:
@@ -43,21 +43,15 @@ extension MessageContentType {
             return cell
             
         case .Voice:
-            let cell: TSChatVoiceCell = tableView.ts_dequeueReusableCell(TSChatVoiceCell.self)
-            cell.delegate = viewController
-            cell.setCellContent(model)
-            return cell
-            
+            return nil
+
         case .System:
             let cell: TSChatSystemCell = tableView.ts_dequeueReusableCell(TSChatSystemCell.self)
             cell.setCellContent(model)
             return cell
             
         case .File:
-            let cell: TSChatVoiceCell = tableView.ts_dequeueReusableCell(TSChatVoiceCell.self)
-            cell.delegate = viewController
-            cell.setCellContent(model)
-            return cell
+            return nil
             
         case .Time :
             let cell: TSChatTimeCell = tableView.ts_dequeueReusableCell(TSChatTimeCell.self)

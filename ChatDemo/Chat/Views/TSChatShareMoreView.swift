@@ -123,22 +123,21 @@ extension TSChatShareMoreView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        guard let subArray = self.groupDataSouce.get(index: section) else {
-//            return 0
-//        }
-//        return subArray.count
-        return 3
+        guard let subArray = self.groupDataSouce.get(index: section) else {
+            return 0
+        }
+        return subArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TSChatShareMoreCollectionViewCell.identifier, for: indexPath) as! TSChatShareMoreCollectionViewCell
-//        guard let subArray = self.groupDataSouce.get(index: indexPath.section) else {
-//            return TSChatShareMoreCollectionViewCell()
-//        }
-//        if let item = subArray.get(index: indexPath.row) {
-//            cell.itemButton.setImage(item.iconImage, for: .normal)
-//            cell.itemLabel.text = item.name
-//        }
+        guard let subArray = self.groupDataSouce.get(index: indexPath.section) else {
+            return TSChatShareMoreCollectionViewCell()
+        }
+        if let item = subArray.get(index: indexPath.row) {
+            cell.itemButton.setImage(item.iconImage, for: .normal)
+            cell.itemLabel.text = item.name
+        }
         return cell
     }
     
