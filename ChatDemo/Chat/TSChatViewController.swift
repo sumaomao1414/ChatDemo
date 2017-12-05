@@ -66,7 +66,7 @@ final class TSChatViewController: UIViewController {
         self.setupActionBarButtonInterAction()
         
         //获取第一屏的数据
-        self.firstFetchMessageList()
+       // self.firstFetchMessageList()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -117,9 +117,7 @@ extension TSChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let chatModel = self.itemDataSouce.get(index: indexPath.row) else {return TSChatBaseCell()}
         let type: MessageContentType = chatModel.messageContentType
-        if type == .Voice {
-            
-        }
+       
         return type.chatCell(tableView, indexPath: indexPath, model: chatModel, viewController: self)!
     }
 }
@@ -131,7 +129,7 @@ extension TSChatViewController: UIScrollViewDelegate {
         if (scrollView.contentOffset.y < kChatLoadMoreOffset) {
             if self.isEndRefreshing {
                // log.info("pull to refresh");
-                self.pullToLoadMore()
+                //self.pullToLoadMore()
             }
         }
     }
@@ -144,7 +142,7 @@ extension TSChatViewController: UIScrollViewDelegate {
         if (scrollView.contentOffset.y - scrollView.contentInset.top < kChatLoadMoreOffset) {
             if self.isEndRefreshing {
              //   log.info("pull to refresh");
-                self.pullToLoadMore()
+                //self.pullToLoadMore()
             }
         }
     }

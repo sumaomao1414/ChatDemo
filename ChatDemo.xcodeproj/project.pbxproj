@@ -63,8 +63,6 @@
 		2E7F119B1FD0E93A0032EA55 /* TSChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F116A1FD0E93A0032EA55 /* TSChatShareMoreView.swift */; };
 		2E7F119C1FD0E93A0032EA55 /* TSChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F116B1FD0E93A0032EA55 /* TSChatShareMoreView.xib */; };
 		2E7F119D1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F116C1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift */; };
-		2E7F11A11FD0FBE90032EA55 /* BridgrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A01FD0FBE90032EA55 /* BridgrViewController.swift */; };
-		2E7F11A51FD0FC9A0032EA55 /* bridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A41FD0FC9A0032EA55 /* bridgeViewController.m */; };
 		2E7F11B01FD1240A0032EA55 /* TSFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A71FD1240A0032EA55 /* TSFullyHorizontalFlowLayout.swift */; };
 		2E7F11B11FD1240A0032EA55 /* TSGlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A81FD1240A0032EA55 /* TSGlobalHelper.swift */; };
 		2E7F11B21FD1240A0032EA55 /* TSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F11A91FD1240A0032EA55 /* TSImagePicker.swift */; };
@@ -170,10 +168,7 @@
 		2E7F116A1FD0E93A0032EA55 /* TSChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatShareMoreView.swift; sourceTree = "<group>"; };
 		2E7F116B1FD0E93A0032EA55 /* TSChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatShareMoreView.xib; sourceTree = "<group>"; };
 		2E7F116C1FD0E93A0032EA55 /* TSChatSystemEdgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSChatSystemEdgeLabel.swift; sourceTree = "<group>"; };
-		2E7F11A01FD0FBE90032EA55 /* BridgrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgrViewController.swift; sourceTree = "<group>"; };
 		2E7F11A21FD0FC990032EA55 /* ChatDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		2E7F11A31FD0FC9A0032EA55 /* bridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgeViewController.h; sourceTree = "<group>"; };
-		2E7F11A41FD0FC9A0032EA55 /* bridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bridgeViewController.m; sourceTree = "<group>"; };
 		2E7F11A71FD1240A0032EA55 /* TSFullyHorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSFullyHorizontalFlowLayout.swift; sourceTree = "<group>"; };
 		2E7F11A81FD1240A0032EA55 /* TSGlobalHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSGlobalHelper.swift; sourceTree = "<group>"; };
 		2E7F11A91FD1240A0032EA55 /* TSImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSImagePicker.swift; sourceTree = "<group>"; };
@@ -412,9 +407,6 @@
 				2EA9E1301FCFF9B5004B5BD3 /* AppDelegate.swift */,
 				2EA9E1321FCFF9B5004B5BD3 /* ViewController.swift */,
 				2EA9E1341FCFF9B5004B5BD3 /* Main.storyboard */,
-				2E7F11A01FD0FBE90032EA55 /* BridgrViewController.swift */,
-				2E7F11A31FD0FC9A0032EA55 /* bridgeViewController.h */,
-				2E7F11A41FD0FC9A0032EA55 /* bridgeViewController.m */,
 				2E7F11B91FD125F90032EA55 /* Models */,
 				2E7F113A1FD0E9390032EA55 /* Chat */,
 				2E7F11A61FD1240A0032EA55 /* General */,
@@ -826,7 +818,6 @@
 				2E7F11CB1FD13B5F0032EA55 /* UIViewController+Extension.swift in Sources */,
 				2E7F11C41FD125FA0032EA55 /* TSMessageModel.swift in Sources */,
 				2E7F11981FD0E93A0032EA55 /* TSChatEmotionScollView.swift in Sources */,
-				2E7F11A11FD0FBE90032EA55 /* BridgrViewController.swift in Sources */,
 				2E7F11921FD0E93A0032EA55 /* TSChatButton+UI.swift in Sources */,
 				2E7F11C61FD125FA0032EA55 /* TSModelTransformer.swift in Sources */,
 				2E7F11C11FD125FA0032EA55 /* TSChatModel.swift in Sources */,
@@ -869,7 +860,6 @@
 				2E7F117B1FD0E93A0032EA55 /* AudioDelegate.swift in Sources */,
 				2E7F11811FD0E93A0032EA55 /* TSChatDataManager.swift in Sources */,
 				2E7F11941FD0E93A0032EA55 /* TSChatEmotionCell.swift in Sources */,
-				2E7F11A51FD0FC9A0032EA55 /* bridgeViewController.m in Sources */,
 				2E7F11801FD0E93A0032EA55 /* ImageFilesManager.swift in Sources */,
 				2E7F118A1FD0E93A0032EA55 /* TSChatViewController+Interaction.swift in Sources */,
 				2E7F118D1FD0E93A0032EA55 /* TSChatViewController+TestData.swift in Sources */,

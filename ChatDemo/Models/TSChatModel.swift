@@ -13,7 +13,7 @@ import YYText
 class ChatModel: NSObject, TSModelProtocol {
     var audioModel : ChatAudioModel? //音频的 Model
     var imageModel : ChatImageModel? //图片的 Model
-    var chatSendId : String?    //发送人 ID
+    var chatSendId : String? = "wx1234skjksmsjdfwe234"   //发送人 ID
     var chatReceiveId : String? //接受人 ID
     var device : String? //设备类型，iPhone，Android
     var messageContent : String?  //消息内容

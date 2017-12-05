@@ -11,8 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     @IBAction func btnClick(_ sender: UIButton) {
         
-        self.present(TSChatViewController(), animated: false, completion: nil)
+       // self.present(TSChatViewController(), animated: false, completion: nil)
         //self.navigationController?.pushViewController(TSChatViewController(), animated: true)
+        let viewController = TSChatViewController.ts_initFromNib() as! TSChatViewController
+        //viewController.messageModel = self.itemDataSouce[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
     override func viewDidLoad() {
